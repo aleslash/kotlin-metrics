@@ -1,0 +1,13 @@
+micronaut:
+  application:
+    name: comprovantes
+  metrics:
+    enabled: true
+    export:
+      prometheus:
+        enabled: true
+        descriptions: true
+        step: PT1M
+endpoints:
+  prometheus:
+    sensitive: false
