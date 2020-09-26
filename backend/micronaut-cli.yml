@@ -1,0 +1,6 @@
+applicationType: grpc
+defaultPackage: com.alexast
+testFramework: junit
+sourceLanguage: kotlin
+buildTool: gradle
+features: [annotation-api, app-name, docker, file-watch, gradle, grpc, junit, kotlin, kotlin-application, kotlin-extension-functions, logback, readme, shade, tracing-jaeger, yaml]

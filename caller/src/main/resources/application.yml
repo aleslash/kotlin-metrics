@@ -1,0 +1,11 @@
+micronaut:
+  application:
+    name: caller
+  server:
+    port: 8080
+grpc:
+  server:
+    port: 8081
+  client:
+    plaintext: true
+    max-retry-attempts: 10
