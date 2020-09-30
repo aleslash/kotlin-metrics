@@ -9,7 +9,7 @@ class CallerController {
     @Get()
     suspend fun chamaBackend() : String {
         val trancode:String = "teste 1";
-        val channel = ManagedChannelBuilder.forAddress("localhost",50051).usePlaintext().build()
+        val channel = ManagedChannelBuilder.forAddress("localhost",8081).usePlaintext().build()
         val backendService = BackendServiceGrpcKt.BackendServiceCoroutineStub(channel)
 
         val request = BackendRequest.newBuilder().setTrancode(trancode).build()

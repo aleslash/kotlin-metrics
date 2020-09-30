@@ -1,5 +1,8 @@
 package com.alexast
 
+import javax.inject.Singleton
+
+@Singleton
 class BackendEndpoint(val backendService: BackendService) :
         BackendServiceGrpcKt.BackendServiceCoroutineImplBase() {
     override suspend fun sendTransaction(request: BackendRequest): BackendReply {

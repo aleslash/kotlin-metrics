@@ -1,11 +1,11 @@
 micronaut:
   application:
     name: backend
-#grpc:
-#  server:
-#    port: 8081
+grpc:
+  server:
+    port: 8081
 tracing:
   jaeger:
-    enabled: true
+    enabled: false
     sampler:
       probability: 0.1
